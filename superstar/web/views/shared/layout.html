@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <!-- Bootstrap core CSS -->
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/narrow.css" rel="stylesheet">
+    <!-- Optional Bootstrap Theme -->
+    <link href="data:text/css;charset=utf-8," data-href="https://v3.bootcss.com/dist/css/bootstrap-theme.min.css"
+          rel="stylesheet" id="bs-theme-stylesheet">
+    <title>{{.Title}} - {{.AppName}}</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation"><a href="/">Home</a></li>
+                <li role="presentation"><a href="/">About</a></li>
+                <li role="presentation"><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">球星数据库</h3>
+    </div>
+
+    <div>
+        <!-- Render the current template here -->
+    {{ yield }}
+        <footer class="footer">
+            <p>&copy; 2016 Company, Inc.</p>
+        </footer>
+    </div>
+</div> <!-- /container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/public/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/public/js/jquery.min.js"><\/script>')</script>
+<script src="/public/js/bootstrap.min.js"></script>
+</body>
+</html>
